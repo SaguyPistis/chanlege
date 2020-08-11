@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamarinForms3RestApiApp.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    Title="liste d'elephants"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+
+     <StackLayout>
+         <StackLayout BackgroundColor="White" Orientation="Vertical" VerticalOptions="Start"
+                         HorizontalOptions="FillAndExpand">
+
+                <Image Margin="0" Aspect="AspectFit" Source="ele.jpg"
+                       />
+            </StackLayout>
+    
+    <StackLayout Padding="20">
+
+        <ListView x:Name="MyListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Title}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <StackLayout Orientation="Horizontal">
+            <Button
+                BackgroundColor="Khaki"
+                Clicked="OnAdd"
+                Text="Add"
+                HorizontalOptions="FillAndExpand" />
+            <Button
+                BackgroundColor="MediumPurple"
+                Clicked="OnUpdate"
+                Text="SVD localement"
+                HorizontalOptions="FillAndExpand" />
+            <Button
+                BackgroundColor="Crimson"
+                Clicked="OnDelete"
+                Text="Lire Localement"
+                HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+
+    </StackLayout>
+          </StackLayout>
+
+</ContentPage>

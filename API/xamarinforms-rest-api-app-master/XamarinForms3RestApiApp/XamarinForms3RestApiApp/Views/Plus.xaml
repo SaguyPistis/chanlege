@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Info"
+             x:Class="XamarinForms3RestApiApp.Views.Plus">
+
+
+
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+
+                <Label FontSize="30">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Plus d'information à propos des éléphants" FontAttributes="Bold"
+                                      FontSize="20"/>
+                                <Span Text=" "/>
+                                
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Ces informations sont tirée des éléphants existant"/>
+                                <Span Text=" "/>
+                                <Span Text="Pour plus d'information veillez cliquer sur le bouton si dessous "/>
+                                
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+
+                </Label>
+
+                <Button Margin="10" Text="Plus D'infos" BackgroundColor="#03DCF6"
+                        TextColor="White" Command="{Binding OpenWebCommand}"
+                        Clicked="Button_Clicked"/>
+
+            </StackLayout>
+
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Game"
+             x:Class="XamarinForms3RestApiApp.Views.GamePage">
+
+
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <Label Text="Devinez le" 
+                   HorizontalOptions="Center"
+                   FontSize="30"/>
+
+            <Label Text="Nombre magique entre"
+                   HorizontalOptions="Center"
+                   FontSize="30" />
+
+            <Label Text=" x et x"
+                   x:Name="minMaxLabel"
+                   HorizontalOptions="Center"
+                   FontAttributes="Italic"
+                   FontSize="30"/>
+
+            <Entry Placeholder="?"
+                   x:Name="numberEntry"
+                   Keyboard="Numeric"
+                   Margin="0,30,0,0"
+                   FontSize="50"
+                   HorizontalOptions="CenterAndExpand"
+                   WidthRequest="150"
+                   HeightRequest="150"
+                   HorizontalTextAlignment="Center"/>
+
+            <Button Text="DEVINER" Clicked="ButtonDeviner" 
+                    HorizontalOptions="Center"
+                    WidthRequest="120"
+                    TextColor="White"
+                    BackgroundColor="Blue"
+                    />
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
+

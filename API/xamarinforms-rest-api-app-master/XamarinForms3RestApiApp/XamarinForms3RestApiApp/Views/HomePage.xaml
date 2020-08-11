@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Home"
+             x:Class="XamarinForms3RestApiApp.Views.HomePage">
+
+
+    <ContentPage.Content>
+
+        <StackLayout>
+            <StackLayout BackgroundColor=" #F7E9E9" Orientation="Vertical" VerticalOptions="Start"
+                         HorizontalOptions="FillAndExpand">
+
+                <Image Margin="0,30,0,30" Aspect="AspectFit" Source="mi8.png"
+                       WidthRequest="150"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label FontSize="30">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Mon Chanllenge mi8" FontAttributes="Bold"
+                                      FontSize="30"/>
+                                <Span Text=" "/>
+                                
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Une application delevopé en c# avec l'utilisatiion des APIs et de "/>
+                                <Span Text=" "/>
+                                 <Span Text="Xamarin Platform," FontAttributes="Bold"/>
+                              
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="Center" VerticalOptions="End">
+                <Button Text="Play" BackgroundColor="#D79404" HorizontalOptions="FillAndExpand"
+                        Clicked="Button_Play" Margin="0,50,0,0"/>
+
+                <Button Text="My Elephant" BackgroundColor="#03DCF6" TextColor="White"
+                        Clicked="Button_ShowAPI" Margin="0,50,0,0"/>
+            </StackLayout>
+            
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

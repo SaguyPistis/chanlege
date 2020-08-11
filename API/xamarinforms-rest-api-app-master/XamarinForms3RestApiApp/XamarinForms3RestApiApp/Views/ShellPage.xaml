@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:view="clr-namespace:XamarinForms3RestApiApp.Views"
+       xmlns:page="clr-namespace:XamarinForms3RestApiApp"
+       x:Class="XamarinForms3RestApiApp.Views.ShellPage">
+
+    <FlyoutItem Title="MyTabs" FlyoutDisplayOptions="AsMultipleItems">
+
+        <ShellContent Title="Home" Icon="home.png">
+            <view:HomePage/>
+        </ShellContent>
+
+        <ShellContent Title="Game" Icon="game.png">
+            <view:GamePage/>
+        </ShellContent>
+
+        <ShellContent Title="Elephant" Icon="icEle.png">
+            <page:MainPage/>
+        </ShellContent>
+
+    
+        <ShellContent Title="Plus" Icon="plus.png">
+            <view:Plus/>
+        </ShellContent>
+
+    </FlyoutItem>
+
+
+    
+</Shell>
